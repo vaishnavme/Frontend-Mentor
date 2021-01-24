@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: #0099ff;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+.card {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    min-height: 500px;
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 2rem;
+}
+.card-content {
+    width: 60%;
+    padding: 1rem 1.5rem;
+}
+.illustration-box {
+    width: 45%;
+    background: url('../images/illustration-woman-online-desktop.svg') right no-repeat;
+}
+.box {
+    margin-top: 2rem;
+    position: absolute;
+    left: 225px;
+}
+.faq-container{
+    display: block;
+    padding:1.1rem 0 1rem;
+    border-bottom: 1px solid hsl(240, 44%, 90%);
+    cursor: pointer;
+}
+
+.faq-item{
+    margin-top: 1rem;
+    display: none;
+    height: auto;
+}
+
+.faq-container span.heading:active{
+    color: var(--softRed-color);
+ }
+
+.faq-button{
+     visibility: hidden;
+     height: 0;
+     width: 0;
+     position: absolute;
+ }
+
+input:checked + span span.heading{
+    font-weight: bold;
+}
+input:checked + span span.faq-item{
+    display: block;
+}
+span.heading{
+    display: flex;
+    justify-content: space-between;
+}
+span.faq-content span.heading::after{
+    content: url("../images/icon-arrow-down.svg");
+    padding: 0 0.5rem;
+    transition: transform 0.2s;
+}
+input:checked + span span.heading::after{
+    transform: rotate(-180deg);
+}

@@ -63,6 +63,7 @@ section {
     margin-top: 1rem;
     display: none;
     height: auto;
+    line-height: 24px;
 }
 .input + span span.faq-item,
 .faq-container span.heading {

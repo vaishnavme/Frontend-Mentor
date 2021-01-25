@@ -18,22 +18,23 @@ body {
     background-image: var(--gradient);
     color: var(--dark-blue);
     font-size: 12px;
-}
-section {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+section {
     position: relative;
+    width: 100%;
+    max-width: 950px;
+    padding: 1rem;
 }
 .card {
     display: flex;
-    width: 100%;
-    max-width: 900px;
-    min-height: 500px;
     background-color: var(--white);
     position: relative;
     border-radius: 2rem;
+    min-height: 500px;
 }
 .card-content {
     width: 60%;
@@ -44,9 +45,9 @@ section {
     background: url('../images/illustration-woman-online-desktop.svg') right no-repeat;
 }
 .box {
-    margin-top: 2rem;
     position: absolute;
-    left: 225px;
+    top: 186px;
+    left: -78px;
 }
 .faq-container{
     display: block;
@@ -55,6 +56,7 @@ section {
     cursor: pointer;
 }
 .card-heading {
+    font-size: 32px;
     margin-bottom: 1.5rem;
 }
 .faq-item{
@@ -94,4 +96,30 @@ span.faq-content span.heading::after{
 }
 input:checked + span span.heading::after{
     transform: rotate(-180deg);
+}
+@media screen and (max-width: 860px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-heading {
+        text-align: center;
+    }
+    .illustration-box {
+        position: absolute;
+        top: -110px;
+        width: 100%;
+        min-height: 200px;
+        background: url('../images/illustration-woman-online-mobile.svg') no-repeat;
+    }
+    .card-content {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        padding: 1rem 1.5rem;
+    }
+    .box {
+        display: none;
+    }
 }

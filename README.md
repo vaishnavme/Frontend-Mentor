@@ -14,3 +14,4 @@
 | :------------- | :--------------------:| :------------------------------------------------------------------------------: |:------------------------------------------------------------------------------:|
 |  01            | Profile Card         |[Live Demo](https://vaishnavme.github.io/Frontend-Mentor/profile-card-component-main/)        |[Source Code](https://github.com/vaishnavme/Frontend-Mentor/tree/main/profile-card-component-main)|
 |  02            | FAQ Accordion         |[Live Demo](https://vaishnavme.github.io/Frontend-Mentor/faq-accordion/)        |[Source Code](https://github.com/vaishnavme/Frontend-Mentor/tree/main/faq-accordion)|
+|  03            | Article Archieve         |[Live Demo](https://vaishnavme.github.io/Frontend-Mentor/article-preview/)        |[Source Code](https://github.com/vaishnavme/Frontend-Mentor/tree/main/article-preview)|

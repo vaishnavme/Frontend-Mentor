@@ -12,50 +12,53 @@
 <body>
 
   <div class="container">
-    <div class="header">
-      <h1>Simple, traffic-based pricing</h1>
-      <p>Sign-up for our 30-day trial. No credit card required.</p>
-    </div>
-
-    <div class="card">
-      <div class="card-header">
-        <div class="left">
-          <span id="page-view">100k PAGEVIEWS</span>
-        </div>
-        <div class="right">
-          <span id="price-amount">$16.00</span> 
-          <span id="price-period">/month</span>
-        </div>
+    <section>
+      <div class="header">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
       </div>
-      <input type="range" id="range-slider" min="5" max="40" step="5" class="slider" value="16">
-      <div class="card-body">
-        <div class="billing">
-          <div class="month">
-            <span>Monthly Billing</span>
-          </div>
-          <label for="bill-type"></label>
-          <input type="checkbox" id="bill-type">
-          <div class="year">
-            <span>Yearly Billing</span>
-            <spna>25% discount</spna>
-          </div>
-        </div>
-      </div>
-      <div class="card-footer">
-        <div class="left">
-          <ul>
-            <li>Unlimited websites</li>
-            <li>100% data ownership</li>
-            <li>Email reports</li>
-          </ul>
-        </div>
-        <div class="right">
-          <button>Start my trial</button>
-        </div>
-      </div>
-    </div>
-  </div>
   
+      <div class="card">
+        <div class="card-header flex">
+          <div class="left">
+            <span id="page-view">100k  PAGEVIEWS</span>
+          </div>
+          <div class="right">
+            <span id="price-amount">$16.00</span> 
+            <span id="price-period">/month</span>
+          </div>
+        </div>
+        <input type="range" id="range-slider" min="5" max="40" step="5" class="slider" value="16">
+  
+          <div class="card-body ">
+            <div class="bill-switch flex">
+              <div class="month ">
+                <p>Monthly Billing</p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" class="checkbox">
+                <span class="slider-box round"></span>
+              </label>
+              <div class="year">
+                <p>Yearly Billing <span class="discount">25% discount</span></p>
+              </div>
+            </div>
+          </div>
+        <div class="card-footer flex">
+          <div class="left">
+            <ul>
+              <li>Unlimited websites</li>
+              <li>100% data ownership</li>
+              <li>Email reports</li>
+            </ul>
+          </div>
+          <div class="right">
+            <button>Start my trial</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
   <!--
     Simple, traffic-based pricing
   Sign-up for our 30-day trial. No credit card required. 

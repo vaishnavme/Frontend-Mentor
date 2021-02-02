@@ -10,13 +10,9 @@
     --body-background: hsl(230, 100%, 99%);
     --gray-red: hsl(15, 100%, 70%);
     --gray-red-bg: hsl(14, 92%, 95%);
-
     --light-blue:hsl(225, 20%, 60%);
     --dark-blue: hsl(227, 35%, 25%);
-
     --white: hsl(0, 0%, 100%);
-
-
     --box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 body {
@@ -36,7 +32,11 @@ h1,h2,h3,h4,h5,h6 {
     height: 100vh;
 }
 section {
+    width: 100%;
+    max-width: 650px;
     padding: 0.5rem;
+    flex-direction: column;
+    align-items: center;
 }
 .container .header {
     margin-bottom: 50px;
@@ -45,7 +45,6 @@ section {
 .container .header h1 {
     margin: 1rem;
 }
-
 .card {
     width: 100%;
     max-width: 600px;
@@ -109,18 +108,14 @@ section {
     padding: 0.2rem;
     border-radius: 3px;
 }
-.card-footer {
-    border-top: 1px solid var(--light-blue);
-}
+
 .card-footer ul li {
     list-style-image: url('../images/icon-check.svg');
     margin-left: 1rem;
     padding: 0.1rem;
 }
-
-
 button {
-    width: 200px;
+    width: 150px;
     padding: 0.8rem 1rem;
     border-radius: 2rem;
     border: none;
@@ -131,7 +126,6 @@ button {
     outline: none;
     background-color: var(--dark-blue);
 }
-
 /* checkbox */
 .switch {
     position: relative;
@@ -182,4 +176,13 @@ input:checked + .slider-box:before {
 }
 .slider-box.round:before {
     border-radius: 50%;
+}
+@media screen and (max-width: 488px) {
+    .card-header, .card-footer {
+        flex-direction: column;
+    }
+    .left, .right {
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+    }
 }

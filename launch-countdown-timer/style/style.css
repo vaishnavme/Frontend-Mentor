@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --white: hsl(0, 0%, 100%);
+    --soft-red: hsl(345, 95%, 68%);
+    --gray-blue: hsl(237, 18%, 59%);
+    --dark-blue: hsl(236, 21%, 26%);
+    --very-dark-blue: hsl(237, 20%, 18%);
+    --mostly-black: hsl(234, 17%, 12%);
+}
+body {
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+    color: var(--white);
+    height: 100vh;
+    background: url("../images/bg-stars.svg") top/100% 80% no-repeat, url("../images/pattern-hills.svg") bottom/100% 20% no-repeat, linear-gradient(to bottom, #1e1e28, #251d2c);
+    background-repeat: no-repeat;
+}
+.container {
+    max-width: 1200px;
+    display: block;
+    margin: auto;
+    padding: 2rem 0;
+}
+.countdown {
+    margin: 3rem auto;
+}
+h2 {
+    font-size: 28px;
+    letter-spacing: 14px;
+    text-align: center;
+}
+.counter {
+    display: flex;
+    margin: 100px auto;
+    justify-content: center;
+}
+.card-clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+}
+.card span {
+    font-size: 8rem;
+    font-weight: 700;
+    color: var(--soft-red);
+}
+.card-clock p {
+    margin-top: 2rem;
+    font-size: 16px;
+    letter-spacing: 10px;
+    font-weight: 700;
+    color: var(--gray-blue);
+}

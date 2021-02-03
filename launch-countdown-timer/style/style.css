@@ -38,6 +38,7 @@ h2 {
     display: flex;
     margin: 100px auto;
     justify-content: center;
+    padding: 1rem;
 }
 .card-clock {
     display: flex;
@@ -65,3 +66,9 @@ h2 {
     font-weight: 700;
     color: var(--gray-blue);
 }
+@media screen and (max-width: 940px) {
+    body {
+        background: url("../images/bg-stars.svg") top/100% 80% no-repeat, url("../images/pattern-hills.svg") bottom/100% 20% no-repeat, linear-gradient(to bottom, #1e1e28, #251d2c);
+    }
+}
+

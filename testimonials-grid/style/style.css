@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+:root {
+    --violet: hsl(263, 55%, 52%);
+    --grayish-blue: hsl(217, 19%, 35%);
+    --blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--light-grayish-blue);
+}
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+main{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 30px;
+    height: 100%;
+}
+.grid-card {
+    border-radius: 6px;
+    padding: 2rem;
+    line-height: 20px;
+}
+.grid-card.one {
+    background-color: var(--violet);
+    grid-column: span 4;
+}
+.grid-card.two {
+    background-color: var(--grayish-blue);
+    grid-column: span 2;
+}
+.grid-card.three {
+    background-color: var(--white);
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.grid-card.four {
+    background-color: var(--white);
+    grid-row: 2;
+    grid-column: span 2;
+}
+.grid-card.five {
+    background-color: var(--blackish-blue);
+    grid-row: 2;
+    grid-column: span 4;
+}
+.one ,.two ,.five h2 , h3{
+    color: var(--white);
+}
+.lead {
+    color: var(--light-gray);
+    font-size: 12px;
+    font-weight: 500;
+}
+.lead-d {
+    color: var(--grayish-blue);
+}
+.grid-card h2 {
+    margin: 0.5rem auto;
+}

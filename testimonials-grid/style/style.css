@@ -22,8 +22,11 @@ body {
     height: 100vh;
     background-color: var(--light-grayish-blue);
 }
+main h2 {
+    font-size: 16px;
+}
 .container {
-    max-width: 80%;
+    max-width: 75%;
     margin: auto;
 }
 main{
@@ -77,6 +80,21 @@ main{
 .grid-card h2 {
     margin: 0.5rem auto;
 }
+.card-header {
+    display: flex;
+    align-items: center;
+}
+.card-header img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.card-header .info {
+    margin-left: 0.5rem;
+}
+.card-header .info h2{
+    margin: 0;
+}
 @media screen and (max-width: 1000px) {
     .container {
         max-width: 90%;
@@ -84,5 +102,9 @@ main{
     main {
         display: flex;
         flex-direction: column;
+    }
+    .grid-card {
+        width: 100%;
+        max-width: 600px;
     }
 }

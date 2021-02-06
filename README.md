@@ -21,3 +21,4 @@ More [Details](https://www.frontendmentor.io/) about Frontend Mentor Challenges.
 |  05            | Launch Countdown        |[Live Demo](https://vaishnavme.github.io/Frontend-Mentor/launch-countdown-timer/)        |[Source Code](https://github.com/vaishnavme/Frontend-Mentor/tree/main/launch-countdown-timer)|
 |  06            | Four Card        |[Live Demo](https://vaishnavme.github.io/Frontend-Mentor/four-card/)        |[Source Code](https://github.com/vaishnavme/Frontend-Mentor/tree/main/four-card)|
 |  07            | Testimonials Grid        |[Live Demo](https://vaishnavme.github.io/Frontend-Mentor/testimonials-grid/)        |[Source Code](https://github.com/vaishnavme/Frontend-Mentor/tree/main/testimonials-grid)|
+|  08            | Base Apparel       |[Live Demo](https://vaishnavme.github.io/Frontend-Mentor/base-apparel/)        |[Source Code](https://github.com/vaishnavme/Frontend-Mentor/tree/main/base-apparel)|

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+:root {
+    --pink: hsl(322, 100%, 66%);
+    --very-pale-cyan: hsl(193, 100%, 96%);
+    --very-Dark-cyan: hsl(192, 100%, 9%);
+    --graysh-blue: hsl(208, 11%, 55%);
+    --white: #ffffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.container {
+    max-width: 85%;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section.hero {
+    height: 100vh;
+    padding: 2rem 0;
+    background-image: url('../images/bg-hero-desktop.svg');
+    background-color: var(--very-pale-cyan);
+}
+.btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 18px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.btn__bg_white {
+    width: 150px;
+    background-color: var(--white);
+}
+.hero__landing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+.hero__text {
+    width: 50%;
+    flex: 1;
+    margin-right: 2rem;
+}
+.hero__heading {
+    font-size: 40px;
+    margin-bottom: 1.5rem;
+}
+.hero__para {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 1.5rem;
+}
+.hero__image {
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+}
+.btn__bg_pink {
+    color: var(--white);
+    background-color: var(--pink);
+}
+section.about {
+    margin: 100px auto;
+}
+.card {
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    min-height: 400px;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.card__left {
+    max-width: 50%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.card__right {
+    display: flex;
+    justify-content: flex-start;
+}
+.card__para {
+    padding: 0.5rem 0;
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 28px;
+}
+.card__image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}

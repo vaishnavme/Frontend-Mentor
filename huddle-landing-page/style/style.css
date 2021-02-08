@@ -129,6 +129,31 @@ section.about {
     height: auto;
 }
 
+footer {
+    position: relative;
+    margin-top: 150px;
+    padding-bottom: 500px;
+    color: var(--white);
+    background-color: var(--very-Dark-cyan);
+}
+.popup {
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    max-width: 650px;
+    height: 160px;
+    border-radius: 5px;
+    color: var(--very-Dark-cyan);
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+}
+.popup__heading {
+    margin: 1rem auto 
+}
+
 @media screen and (max-width: 1000px) {
     .container {
         max-width: 95%;

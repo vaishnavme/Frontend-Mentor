@@ -241,4 +241,14 @@ ul li{
     .card__para {
         width: 100%;
     }
+    .footer__box {
+        padding-top: 180px;
+    }
+    .box__contact, .box__link {
+        grid-column: span 12;
+    }
+    .social {
+        grid-column: span 9;
+    }
+    
 }

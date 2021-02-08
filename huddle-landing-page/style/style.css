@@ -142,9 +142,10 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    padding: 1rem;
     width: 100%;
     max-width: 650px;
-    height: 160px;
+    min-height: 160px;
     border-radius: 5px;
     color: var(--very-Dark-cyan);
     background-color: var(--white);

@@ -34,8 +34,12 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+.navbar__logo {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
 section.hero {
-    height: 100vh;
     padding: 2rem 0;
     background-image: url('../images/bg-hero-desktop.svg');
     background-color: var(--very-pale-cyan);
@@ -125,3 +129,41 @@ section.about {
     height: auto;
 }
 
+@media screen and (max-width: 1000px) {
+    .container {
+        max-width: 95%;
+        padding: 0 0.5rem;
+    }
+    .hero__landing {
+        display: block;
+        margin: 1.5rem auto;
+
+    }
+    .hero__text {
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .hero__para {
+        margin: 1rem auto;
+    }
+    .card {
+        flex-direction: column-reverse;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+    .card.card__alt {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .card__left {
+        max-width: 100%;
+        margin-bottom: 1rem;
+        flex: 1;
+    }
+    .card__para {
+        width: 100%;
+    }
+}

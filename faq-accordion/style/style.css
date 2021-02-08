@@ -1,139 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 :root {
-    --dark-blue: hsl(238, 29%, 16%);
-    --soft-red: hsl(14, 88%, 65%);
-    --white: #ffffff;
+	--dark-blue: hsl(238, 29%, 16%);
+	--soft-red: hsl(14, 88%, 65%);
+	--white: #ffffff;
 
-    --gradient: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-    --line: hsl(240, 5%, 91%);
+	--gradient: linear-gradient(
+		to bottom,
+		hsl(273, 75%, 66%),
+		hsl(240, 73%, 65%)
+	);
+	--line: hsl(240, 5%, 91%);
 }
 body {
-    font-family: 'Kumbh Sans', sans-serif;
-    font-weight: 400;
-    background-image: var(--gradient);
-    color: var(--dark-blue);
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+	font-family: "Kumbh Sans", sans-serif;
+	font-weight: 400;
+	background-image: var(--gradient);
+	color: var(--dark-blue);
+	font-size: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 section {
-    position: relative;
-    width: 100%;
-    max-width: 950px;
-    padding: 1rem;
+	position: relative;
+	width: 100%;
+	max-width: 950px;
+	padding: 1rem;
 }
 .card {
-    display: flex;
-    background-color: var(--white);
-    position: relative;
-    border-radius: 2rem;
-    min-height: 500px;
+	display: flex;
+	background-color: var(--white);
+	position: relative;
+	border-radius: 2rem;
+	min-height: 500px;
 }
 .card-content {
-    width: 60%;
-    padding: 1rem 1.5rem;
+	width: 60%;
+	padding: 1rem 1.5rem;
 }
 .illustration-box {
-    width: 45%;
-    background: url('../images/illustration-woman-online-desktop.svg') right no-repeat;
+	width: 45%;
+	background: url("../images/illustration-woman-online-desktop.svg") right
+		no-repeat;
 }
 .box {
-    position: absolute;
-    top: 186px;
-    left: -78px;
+	position: absolute;
+	top: 186px;
+	left: -78px;
 }
-.faq-container{
-    display: block;
-    padding:1.1rem 0 1rem;
-    border-bottom: 1px solid var(--line);
-    cursor: pointer;
+.faq-container {
+	display: block;
+	padding: 1.1rem 0 1rem;
+	border-bottom: 1px solid var(--line);
+	cursor: pointer;
 }
 .card-heading {
-    font-size: 32px;
-    margin-bottom: 1.5rem;
+	font-size: 32px;
+	margin-bottom: 1.5rem;
 }
-.faq-item{
-    margin-top: 1rem;
-    display: none;
-    height: auto;
-    line-height: 24px;
+.faq-item {
+	margin-top: 1rem;
+	display: none;
+	height: auto;
+	line-height: 24px;
 }
 .input + span span.faq-item,
 .faq-container span.heading {
-    transition: all 250ms;
+	transition: all 250ms;
 }
-.faq-container span.heading:hover{
-    color: var(--soft-red);
- }
+.faq-container span.heading:hover {
+	color: var(--soft-red);
+}
 
-.faq-button{
-     visibility: hidden;
-     height: 0;
-     width: 0;
-     position: absolute;
- }
+.faq-button {
+	visibility: hidden;
+	height: 0;
+	width: 0;
+	position: absolute;
+}
 
-input:checked + span span.heading{
-    font-weight: bold;
+input:checked + span span.heading {
+	font-weight: bold;
 }
-input:checked + span span.faq-item{
-    display: block;
+input:checked + span span.faq-item {
+	display: block;
 }
-span.heading{
-    display: flex;
-    justify-content: space-between;
+span.heading {
+	display: flex;
+	justify-content: space-between;
 }
-span.faq-content span.heading::after{
-    content: url("../images/icon-arrow-down.svg");
-    padding: 0 0.5rem;
-    transition: transform 0.2s;
+span.faq-content span.heading::after {
+	content: url("../images/icon-arrow-down.svg");
+	padding: 0 0.5rem;
+	transition: transform 0.2s;
 }
-input:checked + span span.heading::after{
-    transform: rotate(-180deg);
+input:checked + span span.heading::after {
+	transform: rotate(-180deg);
 }
 @media screen and (max-width: 860px) {
-    .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .card-heading {
-        text-align: center;
-    }
-    .illustration-box {
-        position: absolute;
-        top: -110px;
-        width: 100%;
-        min-height: 200px;
-        background: url('../images/illustration-woman-online-mobile.svg') no-repeat;
-    }
-    .card-content {
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        padding: 1rem 1.5rem;
-    }
-    .box {
-        display: none;
-    }
+	.card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.card-heading {
+		text-align: center;
+	}
+	.illustration-box {
+		position: absolute;
+		top: -110px;
+		width: 100%;
+		min-height: 200px;
+		background: url("../images/illustration-woman-online-mobile.svg") no-repeat;
+	}
+	.card-content {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		padding: 1rem 1.5rem;
+	}
+	.box {
+		display: none;
+	}
 }
 
 /* footer */
 a {
-    text-decoration: none;
-    color: var(--dark-blue) !important;
+	text-decoration: none;
+	color: var(--dark-blue) !important;
 }
 .attribution {
-    position: absolute;
-    width: 100%;
-    bottom: 10px;
-    color: var(--white);
-    font-size: 16px !important;
+	position: absolute;
+	width: 100%;
+	bottom: 10px;
+	color: var(--white);
+	font-size: 16px !important;
 }

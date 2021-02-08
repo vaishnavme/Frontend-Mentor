@@ -1,73 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" type="text/css" href="./style/style.css">
-  <title>Frontend Mentor | FAQ Accordion Card</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" type="text/css" href="./style/style.css" />
+		<title>Frontend Mentor | FAQ Accordion Card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  
-  <section>
-    <div class="card">
-        <div class="illustration-box"></div>
-        <div class="card-content">
-          <h1 class="card-heading">
-            FAQ
-          </h1>
-            <label>
-              <input class="faq-button" type="checkbox">
-              <span class="faq-content faq-container">
-                    <span class="heading">How many team members can I invite?</span>
-                    <span class="faq-item">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</span>
-              </span>
-            </label>
-            <label>
-              <input class="faq-button" type="checkbox">
-              <span class="faq-content faq-container">
-                    <span class="heading">What is the maximum file upload size?</span>
-                    <span class="faq-item">No more than 2GB. All files in your account must fit your allotted storage space.</span>
-              </span>
-            </label>
-            <label>
-              <input class="faq-button" type="checkbox">
-              <span class="faq-content faq-container">
-                    <span class="heading">How do I reset my password?</span>
-                    <span class="faq-item">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</span>
-              </span>
-            </label>
-            <label>
-              <input class="faq-button" type="checkbox">
-              <span class="faq-content faq-container">
-                    <span class="heading">Can I cancel my subscription?</span>
-                    <span class="faq-item">Yes! Send us a message and we’ll process your request no questions asked.</span>
-              </span>
-            </label>
-            <label>
-              <input class="faq-button" type="checkbox">
-              <span class="faq-content faq-container">
-                    <span class="heading">Do you provide additional support?</span>
-                    <span class="faq-item">Chat and email support is available 24/7. Phone lines are open during normal business hours.</span>
-              </span>
-            </label>
-        </div>
-    </div>
-      <img loading="lazy" class="box" src="./images/illustration-box-desktop.svg" alt="box illustration">
-  </section>
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<div class="card">
+				<div class="illustration-box"></div>
+				<div class="card-content">
+					<h1 class="card-heading">FAQ</h1>
+					<label>
+						<input class="faq-button" type="checkbox" />
+						<span class="faq-content faq-container">
+							<span class="heading">How many team members can I invite?</span>
+							<span class="faq-item"
+								>You can invite up to 2 additional users on the Free plan. There
+								is no limit on team members for the Premium plan.</span
+							>
+						</span>
+					</label>
+					<label>
+						<input class="faq-button" type="checkbox" />
+						<span class="faq-content faq-container">
+							<span class="heading">What is the maximum file upload size?</span>
+							<span class="faq-item"
+								>No more than 2GB. All files in your account must fit your
+								allotted storage space.</span
+							>
+						</span>
+					</label>
+					<label>
+						<input class="faq-button" type="checkbox" />
+						<span class="faq-content faq-container">
+							<span class="heading">How do I reset my password?</span>
+							<span class="faq-item"
+								>Click “Forgot password” from the login page or “Change
+								password” from your profile page. A reset link will be emailed
+								to you.</span
+							>
+						</span>
+					</label>
+					<label>
+						<input class="faq-button" type="checkbox" />
+						<span class="faq-content faq-container">
+							<span class="heading">Can I cancel my subscription?</span>
+							<span class="faq-item"
+								>Yes! Send us a message and we’ll process your request no
+								questions asked.</span
+							>
+						</span>
+					</label>
+					<label>
+						<input class="faq-button" type="checkbox" />
+						<span class="faq-content faq-container">
+							<span class="heading">Do you provide additional support?</span>
+							<span class="faq-item"
+								>Chat and email support is available 24/7. Phone lines are open
+								during normal business hours.</span
+							>
+						</span>
+					</label>
+				</div>
+			</div>
+			<img
+				loading="lazy"
+				class="box"
+				src="./images/illustration-box-desktop.svg"
+				alt="box illustration"
+			/>
+		</section>
 
-
-  <div class="attribution">
-    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://www.github.com/vaishnavme">Vaishnav</a>.</p>
-  </div>
-
-</body>
+		<div class="attribution">
+			<p>
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="https://www.github.com/vaishnavme">Vaishnav</a>.
+			</p>
+		</div>
+	</body>
 </html>

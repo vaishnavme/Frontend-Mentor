@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--very-Dark-cyan);
 }
 .container {
-    max-width: 85%;
+    max-width: 80%;
     margin: auto;
     padding: 0 1rem;
 }
@@ -81,7 +81,7 @@ section.hero {
 }
 .hero__image {
     width: 100%;
-    max-width: 750px;
+    max-width: 650px;
     height: auto;
 }
 .btn__bg_pink {
@@ -125,31 +125,3 @@ section.about {
     height: auto;
 }
 
-footer {
-    padding-bottom: 300px;
-    position: relative;
-    width: 100%;
-    margin-top: 180px;
-    background-color: var(--very-Dark-cyan);
-}
-.pop {
-    margin: auto;
-    padding: 1rem;
-    width: 100%;
-    max-width: 580px;
-    height: 150px;
-    border-radius: 8px;
-    text-align: center;
-    background-color: var(--white);
-    box-shadow: var(--box-shadow);
-    position: absolute;
-    top: -75px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.pop__heading {
-    margin-bottom: 2rem;
-}
-.footer-logo {
-    color: var(--white);
-}

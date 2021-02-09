@@ -25,6 +25,8 @@
 		24%
 	); /* (submit button background) */
 	--very-light-magenta: hsl(289, 100%, 72%); /* (radio button outline) */
+
+	--box-shadow-shade: 0 17px 48px rgb(0 0 0 / 30%);
 }
 * {
 	margin: 0;
@@ -73,19 +75,19 @@ body {
 }
 
 .hero--phone {
-	height: 35rem;
+	height: 37rem;
 	width: 18rem;
 	background-color: var(--light-grayish-violet);
 	border: 10px solid var(--white);
 	border-radius: 30px;
-	box-shadow: 0 17px 48px rgb(0 0 0 / 30%);
+	box-shadow: var(--box-shadow-shade);
 	position: relative;
 }
 
 .phone__top {
 	position: absolute;
 	top: 0;
-	height: 5rem;
+	height: 4rem;
 	width: 100%;
 	border-radius: 20px 20px 6px 6px;
 	background: linear-gradient(
@@ -108,7 +110,7 @@ body {
 .top__layout {
 	display: flex;
 	align-items: center;
-	padding: 1rem 1rem;
+	padding: 0.5rem 1rem;
 }
 
 .back__button {
@@ -135,4 +137,104 @@ body {
 }
 .user__name-status {
 	font-size: 12px;
+	color: var(--pale-violet);
+}
+
+.phone__screen {
+	margin-top: 80px;
+}
+.msg {
+	font-size: 11px;
+	width: 70%;
+	margin: 10px 5px;
+	padding: 10px;
+}
+.person__msg-1 {
+	border-radius: 18px 18px 18px 5px;
+	color: var(--moderate-violet);
+	background-color: var(--grayish-blue);
+}
+.person__msg-2 {
+	border-radius: 18px 18px 5px 18px;
+	color: var(--desaturated-dark-violet);
+	background-color: var(--white);
+}
+.person__msg-pic {
+	display: flex;
+	justify-content: flex-end;
+}
+.dog__icon {
+	width: 40px;
+	height: 40px;
+	margin: 0.2rem;
+	border-radius: 10px;
+}
+.user__person {
+	display: flex;
+	justify-content: flex-end;
+	margin: -8px auto;
+}
+.price {
+	display: flex;
+	align-items: center;
+	height: 2.8rem;
+	width: 80%;
+	margin: 10px 5px;
+	padding: 10px;
+	border-radius: 18px 18px 18px 5px;
+	background: linear-gradient(
+		to right,
+		var(--light-magenta),
+		var(--light-violet)
+	);
+}
+.price__circle {
+	width: 25px;
+	height: 25px;
+	border: 2px solid var(--white);
+	border-radius: 50%;
+}
+.price__status {
+	font-size: 11px;
+	margin: auto 0.5rem;
+	color: var(--white);
+}
+.price__rate {
+	font-size: 20px;
+	color: var(--white);
+	margin-left: auto;
+}
+
+.text__area {
+	display: block;
+	margin: 1rem auto;
+	padding: 5px 10px;
+	width: 95%;
+	border-radius: 50px;
+	background-color: var(--white);
+}
+.text__area-input {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.placeholder {
+	padding-left: 5px;
+	font-size: 12px;
+	color: var(--grayish-blue);
+}
+.button {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--very-dark-desaturated-violet);
+}
+.forward__button {
+	border: solid var(--white);
+	border-width: 3px 3px 0 0;
+	padding: 5px;
+	transform: rotate(45deg);
 }

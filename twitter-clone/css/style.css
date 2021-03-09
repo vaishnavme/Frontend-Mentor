@@ -42,7 +42,10 @@ button {
     background-color: var(--hover-bg);
 }
 /* SIDEBAR */
-
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}
 .nav-brand {
     padding: 0 0.8rem;
     cursor: pointer;
@@ -85,7 +88,15 @@ a svg:hover {
     margin-top: 0.5rem;
     background-color: var(--blue);
 }
-
+.setting {
+    margin-top: 6rem;
+}
+.user__setting {
+    display: flex;
+}
+.setting__user {
+    margin-left: 1rem;
+}
 /* FEED */
 .feed {
     border-right: 1px solid var(--border-gray);
